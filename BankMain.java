@@ -1,15 +1,17 @@
 package kbr.banking;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class BankMain {
+public class BankMain extends BankOperations{
+	
 
-	public static void main(String[] args) throws SQLException, ClassNotFoundException{
-		BankLogin bl=new BankLogin();
-		bl.login();
-
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException, InterruptedException {	
+		
+	BankInterface b1=new BankOperations();
+	b1.startMenu();
+	b1.branchMenu();
 	}
+	
 
 }
