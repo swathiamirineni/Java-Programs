@@ -1,8 +1,10 @@
-package kbr.banking;
+package banking;
+
+
 
 import java.sql.*;
 
-public class BankMain extends BankOperations{
+public class BankMain{
 	
 
 	
@@ -10,7 +12,9 @@ public class BankMain extends BankOperations{
 		
 	BankInterface b1=new BankOperations();
 	b1.startMenu();
-	b1.branchMenu();
+	//b1.branchMenu();
+	b1.login();
+	
 	}
 	
 
